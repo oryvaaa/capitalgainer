@@ -351,18 +351,12 @@
   </div>
 
 </div>
-    <script>
-  let time = 10;
-  let countdown = setInterval(function() {
-    time--;
-    if(time <= 0) {
-      clearInterval(countdown);
-      if(typeof fbq !== 'undefined'){
-        fbq('track','Subscribe');
-      }
-      window.location.href = "https://chat.whatsapp.com/B7K41MjkVt2LA7tHblK1Mp";
-    }
-  }, 1000);
-    </script>
+<script>
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'Subscribe');
+  }
+
+  window.location.replace("https://chat.whatsapp.com/B7K41MjkVt2LA7tHblK1Mp");
+</script>
 </body>
 </html>
